@@ -1,0 +1,363 @@
+/*************payment**********/
+
+/* 전체 배경 */
+.card-container { 
+    width: 805px;
+    height: 100vh;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    text-align: center;
+    font-size: 42px;
+}
+/* 모달창 나오는 부분 배경*/
+.card-box { 
+    display: inline-block;
+    /* margin : 70px auto 30px; */
+}
+/* 페이지 헤더 로고 */
+.pays-logo{
+    background-color: #31160b;
+}
+/* 페이지 헤더 로고 이미지*/
+.pays-logo img{
+    width: 380px;
+    height: 120px;
+    margin: 0px auto;
+    display: block;
+    
+}
+
+/* 주문취소 버튼 마우스 올렸을 때 */
+.cancelBtn:hover {
+    background-color: #5e2d1a;
+    color: #fff;
+}
+
+/***************************************/
+
+/*  payCard */
+/****************************************************************/
+/* 카드 모양 이미지  */
+.card-box .creditCard { 
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* 카드결제 이미지 아래 텍스트들*/
+.text-card{ 
+    margin-top: -50px;
+}
+.text-card .cardMsg{
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+}
+
+.text-card .timer {
+    font-size : 20px;
+    margin-bottom: 15px;
+}
+.text-card .timer .big {
+    font-weight: bold;
+    font-size: 45px;
+}
+.text-card .cancelBtn {
+    margin : 20px auto ;
+}
+.text-card .cancelBtn:hover{
+    background-color: #5e2d1a;
+    color: #fff;
+}
+
+/*  카드에서 주문 취소 버튼*/
+.text-card .cancelBtnBox {
+    padding-left: 13px;
+}
+.text-card .cancelBtn {
+    border: none;
+    background-color: #FED900;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 80px;
+    color: #000;
+    cursor : pointer;  
+    padding : 10px 10px;
+    float: left;
+    margin : 40px 18px ;
+}
+
+/****************************************************************/
+
+/* paymobile */
+/****************************************************************/
+
+/* 바코드 이미지 */
+.card-box .mobileCoupon{
+    width: 450px;
+    /* height: 550px; */
+    margin-top: 30px;
+    object-fit: cover;
+}
+/* 바코드 이미지 아래 텍스트들 */
+.text-mobile {
+    margin-top: -15px;
+}
+.text-mobile .timer {
+    font-size : 20px;
+    margin-bottom: 10px;
+}
+.text-mobile .timer .big {
+    font-weight: bold;
+    font-size: 45px;
+}
+.text-mobile .cardMsg{
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+}
+.text-mobile .cancelBtnBox {
+    padding-left: 13px;
+}
+.text-mobile .cancelBtn{
+    border: none;
+    background-color: #FED900;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 80px;
+    color: #000;
+    cursor : pointer;  
+    padding : 10px 10px;
+    float: left;
+    margin : 40px 18px ;
+
+}
+.text-mobile .cancelBtn:hover{
+    background-color: #5e2d1a;
+    color: #fff;
+}
+/****************************************************************/
+
+
+/* payOthers  */
+/****************************************************************/
+
+/* 결제수단 고르는 부분 관련*/
+.card-box .otherPay {
+    margin: 70px auto 30px auto  ;
+}
+.card-container .otherPay .payTable {
+    border: none;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin : 0px 10px ;
+    cursor: pointer;
+    background-color: #fff;
+}
+/* 리스트 안에 이미지들*/
+.card-container .otherPay .payTable img{
+    width: 100px;   
+    display: inline;
+}
+.card-container .otherPay .payTable p{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: '맑은 고딕';
+}
+.text-others .cardMsg{
+    font-size: 30px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+}
+/* payothers 에서 주문 취소버튼 */
+.text-others .cancelBtnBox {
+    padding-left: 65px;
+}
+ .text-others .cancelBtn {
+    border: none;
+    background-color: #FED900;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 80px;
+    color: #000;
+    cursor : pointer;  
+    padding : 10px 10px;
+    float: left;
+    margin : 40px 18px ;
+}
+.text-others .cancelBtn:hover{
+    background-color: #5e2d1a;
+    color: #fff;
+}
+
+/* 바코드 이미지 관련 */
+.barcodeScan {
+    width: 700px;
+    /* height: 300px; */
+    /* margin-top: -80px; */
+}
+.card-container .barcodeScan>img{
+    width: 400px;
+    /* height: 400px; */
+    object-fit: contain;
+    margin-top: 30px;
+}
+/* 바코드 입력메세지 */
+.modal-message {  
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+/* 다른결제수단에서 텍스트 */
+.card-container .text-others{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-container .text-others .timer{
+    /* margin-bottom: -20px; */
+    font-size: 20px;
+}
+.text-others .timer .big {
+    font-weight: bold;
+    font-size: 45px;
+}
+.card-container .text-others .cancelBtn {
+    /* float: left; */
+    /* margin : auto 25px ; */
+}
+
+/****************************************************************/
+
+
+
+/*payResult*/
+/****************************************************************/
+/* 영수증 이미지*/
+.resultContainer{
+    margin-top: 50px;
+}
+.card-box .receiptImg {
+    display: inline-block;
+    width: 100px;
+    /* margin: -50px 0 0 0; */
+}
+/* 주문 내역 표 */
+.receiptList {
+    text-align: center;
+    margin : 0px auto;
+}
+.receiptList>p{
+    position: sticky;
+    top : 0px;
+}
+.receiptList .orderList {
+    margin-top: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid #000;
+    /* margin-left: 30px; */
+    /* padding-bottom: 10px; */
+    
+}
+.receiptList .orderList:last-child {
+    padding: 0 0 20px 0;
+}
+
+.order-receipt {
+    max-height: 190px;
+    overflow-y: auto;
+    margin: 0 auto;
+    display: block;
+    width: 420px;
+}
+.order-receipt thead {
+    /* top : 20px; */
+}
+.receiptList .orderList th{
+    padding-bottom: 15px;
+}
+
+/* 결제완료 메세지 */
+.receiptList p {
+    width: 420px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 3px solid #000000;
+    border-bottom: 2px solid #000000;
+    /* margin: 20px auto 0 30px; */
+    margin:  0px auto;
+    padding-top : 20px;
+    padding-bottom: 20px;
+}
+/* 결제 완료 메세지 */
+
+.payMsg {
+    border-bottom: 3px solid black;
+    margin: 20px 0 0 0 ;
+    text-align: center;
+    font-size : 20px;
+    font-weight : bold;
+}
+.finMsg{
+    font-size: 25px;
+}
+.pointMsg{
+    /* border-top: 3px solid black; */
+    padding-top: 30px;
+    font-size: 25px;
+}
+.pointMsg> span{
+    color: red;
+    font-weight: bold;
+}
+
+/* 영수증 밑에 타이머 */
+.text-result {
+    width: 805px;
+    height: 180px;
+}
+
+/* 타이머 */
+.text-result .timer { /* 남은시간 표시되는 부분*/
+    /* border: 1px solid #000; */
+    margin : 0px auto 20px auto;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text-result .timer .big {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+/* 처음화면으로 돌아가기 나오는 부분 */
+.goHome { 
+    border-radius: 20px;
+    width: 440px;
+    background-color: #FED900;
+    display: inline-block;
+    margin: 10px 0 0 0;
+    padding: 15px 0;
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+}
+.goHome:hover{ 
+    color: #fff;
+    background-color: #5e2d1a;
+}
+/****************************************************************/
