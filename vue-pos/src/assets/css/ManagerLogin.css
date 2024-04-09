@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ManagerLogoImg{
+    width: 400px;
+}
+
+.logoH1{
+    color: #FED900;
+    font-family: 'yg-jalnan';
+    /* -webkit-text-stroke: 1px #31160b; */
+    font-size: 60px;
+}
+
+form.loginBox{
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid #31160B;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-top: 15px;
+}
+#pwInput {
+    width: 270px;
+    height: 45px;
+    margin: 40px;
+    border: 2px solid #FED900;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#pwInput::placeholder{
+    color: #2c2c2c;
+    /* font-weight: bold; */
+}
+#pwInput:focus {
+    outline: none;
+}
+.loginBtn {
+    width: 130px;
+    height: 60px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c2c2c;
+    border: none;
+    background-color: #FED900;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.loginBtn:hover {
+    background: #FED900;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.footer{
+    width: 1200px;
+    height: 110px;
+    background-color: #31160B;
+    position: absolute;
+    bottom: 0;
+
+}

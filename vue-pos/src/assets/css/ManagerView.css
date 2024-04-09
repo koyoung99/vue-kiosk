@@ -1,0 +1,244 @@
+.inner {
+    margin: 30px 0px 10px 100px;
+    
+}
+
+.inner h1 {
+    font-size: 30px;
+}
+
+.listBox h1,
+.h1Box {
+    font-size: 30px;
+
+}
+.listBox h1{
+    margin-bottom: 20px;
+}
+.listBoxTitle{
+    display: flex;
+    justify-content: space-between;
+    width: 996px;
+}
+.listBoxTitle>select{
+    width: 180px;
+}
+
+.ManagerMainHeader ul li:first-child a {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    height: 80px;
+}
+
+.listBox>div{
+    overflow: auto;
+    max-height: 450px;
+}
+.listBox table {
+    width: 1000px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.listBox table thead{
+    position: sticky;
+    top: 0px;
+    background: #fff;
+}
+.listBox table th{
+    line-height: 50px;
+}
+
+.listBox table td {
+    padding: 10px 0;
+    border-top: 1px dotted #9d9bbb;
+    padding: 10px 0;
+}
+.listBox table td:last-child {
+    border-bottom: none;
+}
+.listBoxTitle>h1{
+    cursor: pointer;
+}
+
+.modifyBtn {
+    width: 55px;
+    height: 28px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* insert box */
+.insertMenuBox {
+    width: 1000px;
+    margin: 30px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 22px;
+    position: relative;
+    border: 2px solid #5e2d1a;
+    border-radius: 10px;
+}
+
+.insertMenuBox .textBox {
+    margin-top: 20px 0;
+    text-align-last: left;
+}
+
+.insertMenuBox .textBox input {
+    margin: 0 10px;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #5e2d1a;
+    font-size: 20px;
+}
+
+#menuName {
+    margin-right: 30px;
+    padding:0 10px;
+    width: 300px;
+}
+
+#menuPrice {
+    width: 170px;
+    padding:0 10px;
+}
+
+.categoryBox {
+    float: left;
+    margin-right: 40px;
+
+}
+
+.category {
+    width: 150px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 20px;
+    border: 2px solid #5e2d1a;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.categoryName{
+    width: 220px;
+}
+.categoryPrice{
+    width: 100px;
+}
+.category option{
+    padding:5px 0;
+}
+
+.submitBtn {
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    background: #5e2d1a;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+}
+
+.submitBtn:hover {
+    background: #FED900;
+    color: black;
+    font-weight: bold;
+}
+
+.pictureBox {
+    padding: 20px;
+    position: relative;
+    font-size: 22px;
+}
+
+.pictureBox label {
+    margin-right: 15px;
+}
+
+.pictureBox #pdNo {
+    width: 50px;
+    height: 35px;
+}
+
+/* imgModal */
+.imgModalBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+.imgModal {
+    width: 550px;
+    height: 350px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 30px;
+}
+.imgModal h1{
+    margin-bottom: 30px;
+}
+.imgModal .closeBtn {
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.imgModal span {
+    margin-right: 20px;
+}
+
+.imgModal span:nth-of-type(1),
+.imgModal span:nth-of-type(3) {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.imgModal span:nth-of-type(2),
+.imgModal span:nth-of-type(4) {
+    /* padding: 5px 5px; */
+    /* border: 3px solid #FED900; */
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.imgModal form {
+    margin-top: 35px;
+}
+
+.imgModal form div {
+    margin-top: 40px;
+}
+
+.modalModifyBtn{
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FED900;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modalModifyBtn:hover{
+    background-color: #5e2d1a;
+    color: #fff;
+}
